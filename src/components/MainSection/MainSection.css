@@ -76,20 +76,26 @@
     margin-left: 10px;
     min-height: 250px;
 }
-.mainsection__row1,.mainsection__row2,.mainsection__row3,.mainsection__row4{
+.mainsection__applicationcolumn{
     display: flex;
     align-items: center;
-    font-size: 10px;
+}
+.mainsection__applicationcolumn>.MuiSvgIcon-root{
+    font-size: 12px;
+}
+.mainsection__row1,.mainsection__row2,.mainsection__row3,.mainsection__row4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 .WithStyles\(ForwardRef\(LinearProgress\)\)-root-4{
     width: 100px;
 }
 .mainsection__applicationcount>h4{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
-.mainsection__row1,.mainsection__row2,.mainsection__row3,.mainsection__row4{
-    margin-bottom: 20px;
-}
+
 .mainsection__applicationcount p{
     font-size: 12px;
     padding: 0 30px 0 6px;

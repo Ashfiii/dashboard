@@ -15,7 +15,6 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import NewApplicantInfo from '../NewApplicantInfo/NewApplicantInfo';
-// import userphoto from "/assets/images/avatar.jpg";
 
 const MainSection = () => {
 
@@ -94,23 +93,32 @@ const MainSection = () => {
                     <div className="mainsection__applicationcount">
                         <h4>Total Applications</h4>
                         <div className="mainsection__row1">
-                            <FiberManualRecordIcon />
-                            <p>Applications</p>
+                            <div className="mainsection__applicationcolumn">
+                                <FiberManualRecordIcon />
+                                <p>Applications</p>
+                            </div>
+                            
                             <BorderLinearProgress variant="determinate" value={80} />
                         </div>
                         <div className="mainsection__row2">
-                            <FiberManualRecordIcon />
-                            <p>Shortlisted</p>
-                            <BorderLinearProgress variant="determinate" value={50} />
+                            <div className="mainsection__applicationcolumn">
+                                <FiberManualRecordIcon />
+                                <p>Shortlisted</p>
+                            </div>
+                            <BorderLinearProgress variant="determinate" value={60} />
                         </div>
                         <div className="mainsection__row3">
-                            <FiberManualRecordIcon />
-                            <p>Subjected</p>
+                            <div className="mainsection__applicationcolumn">
+                                <FiberManualRecordIcon />
+                                <p>Subjected</p>
+                            </div>
                             <BorderLinearProgress variant="determinate" value={70} />
                         </div>
                         <div className="mainsection__row4">
-                            <FiberManualRecordIcon />
-                            <p>On hold</p>
+                            <div className="mainsection__applicationcolumn">
+                                <FiberManualRecordIcon />
+                                <p>On hold</p>
+                            </div>
                             <BorderLinearProgress variant="determinate" value={60} />
                         </div>
                     </div>
