@@ -1,0 +1,192 @@
+.mainsection{
+    width: 100%;
+    display: flex;
+}
+.mainsection__left{
+    flex: 0.7;
+    margin-left: 40px;
+}
+.mainsection__right{
+    flex: 0.3;
+}
+.mainsection__widgets{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 14px;
+}
+.mainsection__widgets>.MuiSvgIcon-root{
+    margin-right: 16px;
+}
+.mainsection__username{
+    margin-right: 16px;
+}
+.mainsection__avatar{
+    margin-right: 16px;
+}
+.mainsection__headertitle{
+    margin: 40px 20px 40px 10px;
+}
+.mainsection__title{
+    margin-bottom: 10px;
+}
+.mainsection__date{
+    color: #1785eb;
+}
+
+.mainsection__search{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 10px 30px 10px;
+}
+.mainsection__search>.MuiSvgIcon-root{
+    font-size: 18px;
+    margin: 0 6px 0 10px;
+}
+.mainsection__input{
+    margin-right: 8px;
+}
+.mainsection__stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.mainsection__stats>.MuiPaper-root{
+    background-color: #292929;
+    color: white;
+}
+.mainsection__top{
+    display: flex;
+    margin-top: 20px;
+}
+.mainsection__linegraph{
+    border: 0.2px solid rgba(240, 240, 240, .1);
+    border-radius: 6px;
+    padding: 10px 20px;
+    flex: 0.6;
+    min-height: 250px;
+    margin-right: 10px;
+}
+.mainsection__applicationcount{
+    flex: 0.4;
+    border: 0.2px solid rgba(240, 240, 240, .1);
+    border-radius: 6px;
+    padding: 20px;
+    margin-left: 10px;
+    min-height: 250px;
+}
+.mainsection__row1,.mainsection__row2,.mainsection__row3,.mainsection__row4{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+.WithStyles\(ForwardRef\(LinearProgress\)\)-root-4{
+    width: 100px;
+}
+.mainsection__applicationcount>h4{
+    margin-bottom: 20px;
+}
+.mainsection__row1,.mainsection__row2,.mainsection__row3,.mainsection__row4{
+    margin-bottom: 20px;
+}
+.mainsection__applicationcount p{
+    font-size: 12px;
+    padding: 0 30px 0 6px;
+}
+.mainsection__bottom{
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+.mainsection__referrals{
+    border: 0.2px solid rgba(240, 240, 240, .1);
+    border-radius: 6px;
+    padding: 20px;
+    flex: 0.6;
+    margin-right: 10px;
+}
+.mainsection__referral{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.mainsection__referralinfo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.mainsection__campaigndetails{
+    display: flex;
+    align-items: center;
+}
+.mainsection__campaigndetails>.MuiSvgIcon-root{
+    padding-right: 6px;
+    color: tomato;
+    font-size: 30px;
+}
+.mainsection__campaigndetails>div>h2:first-child{
+    color: tomato;
+}
+.mainsection__referralinfo>.MuiPaper-root{
+    background-color: #292929;
+    color: white;
+}
+.mainsection__referralinfo>.MuiCardContent-root{
+    padding: 8px;
+}
+.mainsection__buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.mainsection__buttons>.MuiButton-root{
+    font-size: 10px;
+    padding: 10px 20px;
+}
+.mainsection__openpositions{
+    flex: 0.4;
+    border: 0.2px solid rgba(240, 240, 240, .1);
+    border-radius: 6px;
+    margin-left: 10px;
+    padding: 20px;
+}
+.mainsection__positiontitle{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.mainsection__piechart{
+    display: flex;
+    justify-content: center;
+}
+.piechart{
+    width: 200px !important;
+    height: 200px !important;
+}
+.mainsection__applicantsection{
+    border: 0.2px solid rgba(240, 240, 240, .1);
+    border-radius: 6px;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+.mainsection__newapplicants{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.mainsection__applicanttitle{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mainsection__applicationinfo{
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}

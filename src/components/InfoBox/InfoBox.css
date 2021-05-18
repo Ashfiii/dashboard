@@ -1,0 +1,46 @@
+.infobox__card{
+  display: flex;
+  border: 0.2px solid rgba(240,240,240,0.2);
+  padding: 10px 30px;
+  flex: 0.33;
+  margin-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.infobox__card:last-child{
+  margin-right: 0;
+}
+.infobox__cardcontent{
+  flex: 0.6;
+}
+.infobox__graph{
+  flex: 0.4;  
+}
+.infobox__typography:first-child{
+  text-align: right;
+}
+.MuiCardContent-root{
+  padding: 0 !important;
+}
+.infobox__cardcontent{
+  display: flex;
+  flex-direction: column;
+}
+.infobox__title{
+  font-size: 12px !important;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.infobox__count{
+  padding-bottom: 10px;
+}
+.infobox__percent{
+  font-size: 12px;
+  color: #1785eb;
+}
+.infobox__group>.MuiSvgIcon-root{
+  font-size: 14px;
+  margin-right: 6px;
+  color: #1785eb;
+}

@@ -1,0 +1,33 @@
+.referralinfo__card{
+  display: flex;
+  border: 0.2px solid rgba(240,240,240,0.2);
+  padding: 8px 14px;
+  justify-content: center;
+  align-items: center;
+  flex: 0.25;
+  margin-right: 10px;
+}
+.referralinfo__card:last-child{
+  margin-right: 0;
+}
+.referralinfo__title{
+  font-size: 12px !important;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.referralinfo__group{
+  padding-bottom: 10px;
+  text-align: center;
+  color: #08a9df;
+}
+.referralinfo__percent{
+  font-size: 12px;
+}
+.referralinfo__count{
+  text-align: center;
+}
+.referralinfo__group>.MuiSvgIcon-root{
+  font-size: 14px;
+  margin-right: 6px;
+}

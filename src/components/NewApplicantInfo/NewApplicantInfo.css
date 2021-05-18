@@ -1,0 +1,23 @@
+.newapplicantinfo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.newapplicantinfo__name{
+    display: flex;
+    align-items: center;
+}
+.newapplicantinfo__name>.MuiSvgIcon-root{
+    font-size: 38px;
+    margin-right: 6px;
+}
+.newapplicantinfo__socialgroupname>p{
+    font-size: 10px;
+    padding-top: 4px;
+}
+.newapplicantinfo__socialgroupname>p>span{
+    color: #1785eb;
+}
+.newapplicantinfo__socialicons>.MuiSvgIcon-root:first-child{
+    margin-right: 12px;
+}
