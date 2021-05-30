@@ -6,7 +6,7 @@ import HistoryIcon from '@material-ui/icons/History';
 import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAlt';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 import './SideBar.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const SideBar = () => {
     return (
@@ -14,9 +14,9 @@ const SideBar = () => {
             <div className="sidebarRow">
                 <HomeIcon />
                 {/* Click PostAddIcon to go through the posts page */}
-                <Link to="/posts">
+                <NavLink to="/posts">
                     <PostAddIcon />
-                </Link>
+                </NavLink>
                 <SubscriptionsIcon />
                 <HistoryIcon />
                 <ThumbUpAltOutlinedIcon />

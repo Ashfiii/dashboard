@@ -15,6 +15,7 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import NewApplicantInfo from '../NewApplicantInfo/NewApplicantInfo';
+import userPhoto from "../../images/avatar.jpg";
 
 const MainSection = () => {
 
@@ -39,17 +40,59 @@ const MainSection = () => {
         ]
       }
 
-      const BorderLinearProgress = withStyles((theme) => ({
+      const ApplicantLinearProgress = withStyles(() => ({
         root: {
           height: 10,
           borderRadius: 5,
+          width: 150
         },
         colorPrimary: {
-          backgroundColor: theme.palette.grey[theme.palette.type === 'light' ? 200 : 700],
+          backgroundColor: 'rgba(240, 240, 240, .1)',
         },
         bar: {
+          backgroundColor: '#82b4b4',
+        },
+      }))(LinearProgress);
+
+      const ShortlistedLinearProgress = withStyles(() => ({
+        root: {
+          height: 10,
           borderRadius: 5,
+          width: 150
+        },
+        colorPrimary: {
+          backgroundColor: 'rgba(240, 240, 240, .1)',
+        },
+        bar: {
           backgroundColor: '#1a90ff',
+        },
+      }))(LinearProgress);
+
+      const SubjectedLinearProgress = withStyles(() => ({
+        root: {
+          height: 10,
+          borderRadius: 5,
+          width: 150
+        },
+        colorPrimary: {
+          backgroundColor: 'rgba(240, 240, 240, .1)',
+        },
+        bar: {
+          backgroundColor: 'tomato',
+        },
+      }))(LinearProgress);
+
+      const OnholdLinearProgress = withStyles(() => ({
+        root: {
+          height: 10,
+          borderRadius: 5,
+          width: 150
+        },
+        colorPrimary: {
+          backgroundColor: 'rgba(240, 240, 240, .1)',
+        },
+        bar: {
+          backgroundColor: '#ffffff',
         },
       }))(LinearProgress);
 
@@ -98,28 +141,28 @@ const MainSection = () => {
                                 <p>Applications</p>
                             </div>
                             
-                            <BorderLinearProgress variant="determinate" value={80} />
+                            <ApplicantLinearProgress variant="determinate" value={80} />
                         </div>
                         <div className="mainsection__row2">
                             <div className="mainsection__applicationcolumn">
                                 <FiberManualRecordIcon />
                                 <p>Shortlisted</p>
                             </div>
-                            <BorderLinearProgress variant="determinate" value={60} />
+                            <ShortlistedLinearProgress variant="determinate" value={60} />
                         </div>
                         <div className="mainsection__row3">
                             <div className="mainsection__applicationcolumn">
                                 <FiberManualRecordIcon />
                                 <p>Subjected</p>
                             </div>
-                            <BorderLinearProgress variant="determinate" value={70} />
+                            <SubjectedLinearProgress variant="determinate" value={70} />
                         </div>
                         <div className="mainsection__row4">
                             <div className="mainsection__applicationcolumn">
                                 <FiberManualRecordIcon />
                                 <p>On hold</p>
                             </div>
-                            <BorderLinearProgress variant="determinate" value={60} />
+                            <OnholdLinearProgress variant="determinate" value={60} />
                         </div>
                     </div>
                 </div>
@@ -164,7 +207,7 @@ const MainSection = () => {
                 <div className="mainsection__widgets">
                     <NotificationsActiveIcon />
                     <span className="mainsection__username">Ashfaque</span>
-                    <Avatar className="mainsection__avatar" alt="Ashfaque"></Avatar>
+                    <Avatar className="mainsection__avatar" src={userPhoto} alt="Ashfaque"></Avatar>
                 </div>
                 <div className="mainsection__search">
                     <Button variant="contained" color="primary">+ Add</Button>

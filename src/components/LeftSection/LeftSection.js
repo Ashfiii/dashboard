@@ -3,6 +3,7 @@ import React from 'react';
 import './LeftSection.css';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import userphoto from "../../images/avatar.jpg";
+import { Link } from 'react-router-dom';
 
 const LeftSection = () => {
     
@@ -10,10 +11,12 @@ const LeftSection = () => {
         <div className="leftsection">
             <div className="leftsection__avatargroup">
                 <Avatar src={userphoto} className="leftsection__avatar" alt="Ashfaque Alam"></Avatar>
-                <div className="leftsection__namedetails">
-                    <h3>Ashfaque Alam</h3>
-                    <p>alam192@gmail.com</p>
-                </div>
+                <Link to='/'>
+                    <div className="leftsection__namedetails">
+                        <h3>Ashfaque Alam</h3>
+                        <p>alam192@gmail.com</p>
+                    </div>
+                </Link>
             </div>
             <div className="leftsection__verticalnav">
                 <p>Motivation</p>

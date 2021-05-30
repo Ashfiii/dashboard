@@ -68,6 +68,9 @@
     min-height: 250px;
     margin-right: 10px;
 }
+.mainsection__line{
+    height: 230px !important;
+}
 .mainsection__applicationcount{
     flex: 0.4;
     border: 0.2px solid rgba(240, 240, 240, .1);
@@ -75,10 +78,23 @@
     padding: 20px;
     margin-left: 10px;
     min-height: 250px;
+    
 }
 .mainsection__applicationcolumn{
     display: flex;
     align-items: center;
+}
+.mainsection__row1>.mainsection__applicationcolumn:first-child{
+    color:#82b4b4;
+}
+.mainsection__row2>.mainsection__applicationcolumn:first-child{
+    color:#1a90ff;
+}
+.mainsection__row3>.mainsection__applicationcolumn:first-child{
+    color: tomato;
+}
+.mainsection__row4>.mainsection__applicationcolumn:first-child{
+    color:#ffffff;
 }
 .mainsection__applicationcolumn>.MuiSvgIcon-root{
     font-size: 12px;
@@ -89,16 +105,13 @@
     align-items: center;
     margin-bottom: 30px;
 }
-.WithStyles\(ForwardRef\(LinearProgress\)\)-root-4{
-    width: 100px;
-}
 .mainsection__applicationcount>h4{
     margin-bottom: 30px;
 }
 
 .mainsection__applicationcount p{
     font-size: 12px;
-    padding: 0 30px 0 6px;
+    padding: 0 30px 0 10px;
 }
 .mainsection__bottom{
     display: flex;

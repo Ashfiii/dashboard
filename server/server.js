@@ -6,13 +6,24 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
 import App from '../src/App';
+import { StaticRouter } from 'react-router';
 
 const PORT =  8000;
 
 const app = express();
 
-app.use('^/$', (req,res,next)=>{
-    const app = ReactDOMServer.renderToString(<App />);
+const router = express.Router();
+
+app.use('/build', express.static('build'));
+
+app.get('*', (req,res)=>{
+    const context= {};
+    const app = ReactDOMServer.renderToString(
+    <StaticRouter location={req.url} context={context}>
+      <App />
+    </StaticRouter>
+    );
+
     const indexFile = path.resolve('./build/index.html');
     fs.readFile(indexFile, 'utf8', (err, data) => {
         if (err) {
@@ -26,7 +37,9 @@ app.use('^/$', (req,res,next)=>{
       });
 })
 
-app.use(express.static(path.resolve(__dirname, '..', 'build')));
+router.use(express.static(path.resolve(__dirname, '..', 'build')));
+
+app.use(router);
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
